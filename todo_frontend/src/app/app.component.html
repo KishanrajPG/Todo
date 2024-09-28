@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <h1>To-Do List</h1>
+
+  <input [(ngModel)]="newTodoTitle" placeholder="Add new task" />
+  <button (click)="addTodo()">Add</button>
+
+  <ul>
+    <li *ngFor="let todo of todos">
+      <span *ngIf="editingTodoId !== todo.id">{{ todo.title }}</span>
+      <input *ngIf="editingTodoId === todo.id" [(ngModel)]="editTodoTitle" />
+      <button *ngIf="editingTodoId !== todo.id" (click)="editTodo(todo)">Edit</button>
+      <button *ngIf="editingTodoId === todo.id" (click)="updateTodo()">Update</button>
+      <button (click)="deleteTodo(todo)">Delete</button>
+    </li>
+  </ul>
+</div>
