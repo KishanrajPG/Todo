@@ -20,7 +20,6 @@ export class AppComponent {
   newTodoTitle: string = '';
   editTodoTitle: string = '';
   editingTodoId: number | null = null;
-  //title = "todo_frontend"
 
   addTodo() {
     if (this.newTodoTitle.trim()) {

@@ -19,17 +19,45 @@ body {
     margin-right: 10px;
   }
   
+  // General button styling
   button {
     padding: 10px 15px;
     font-size: 16px;
-    color: white;
-    background-color: #007bff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  // Add button (green)
+  .add-button {
+    background-color: #28a745;
+  
+    &:hover {
+      background-color: #218838;
+    }
+  }
+  
+  // Edit button (blue)
+  .edit-button {
+    background-color: #007bff;
   
     &:hover {
       background-color: #0056b3;
+    }
+  }
+  
+  // Delete button (red)
+  .delete-button {
+    background-color: #dc3545;
+  
+    &:hover {
+      background-color: #c82333;
     }
   }
   
@@ -53,10 +81,6 @@ body {
   
     input {
       margin-right: 10px;
-    }
-  
-    button {
-      margin-left: 5px;
     }
   }
   
