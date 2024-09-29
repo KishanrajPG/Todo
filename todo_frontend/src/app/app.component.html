@@ -11,6 +11,7 @@
       <button *ngIf="editingTodoId !== todo.id" (click)="editTodo(todo)" class="edit-button">Edit</button> <!-- Blue button -->
       <button *ngIf="editingTodoId === todo.id" (click)="updateTodo()" class="edit-button">Update</button> <!-- Blue button -->
       <button (click)="deleteTodo(todo)" class="delete-button">Delete</button> <!-- Red button -->
+      <button *ngIf="editingTodoId === todo.id" (click)="cancelEdit()" class="cancel-button">Cancel</button> <!-- Yellow button -->
     </li>
   </ul>
 </div>

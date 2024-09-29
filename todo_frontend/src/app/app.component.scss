@@ -51,7 +51,13 @@ body {
       background-color: #0056b3;
     }
   }
+  .cancel-button {
+    background-color: hsl(214, 4%, 37%);
   
+    &:hover {
+      background-color:  hsl(214, 4%, 37%);
+    }
+  }
   // Delete button (red)
   .delete-button {
     background-color: #dc3545;

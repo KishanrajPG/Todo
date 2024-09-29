@@ -12,7 +12,8 @@ export interface Todo {
   providedIn: 'root',
 })
 export class TodoService {
-  private apiUrl = 'https://your-api-url/todos'; // Replace with your API URL
+  private apiUrl = 'http://localhost:3000/todos'; 
+  // Replace with your API URL
 
   constructor(private http: HttpClient) {}
 
