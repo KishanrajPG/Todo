@@ -1,5 +1,5 @@
 # Dockerfile for Node.js Backend
-FROM node:14
+FROM node:18
 
 WORKDIR /app
 
